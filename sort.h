@@ -1,3 +1,5 @@
+#ifndef SORT_H
+#define SORT_H
 /* header file */
 #include <stdlib.h>
 #include <stdio.h>
@@ -11,9 +13,9 @@
  */
 typedef struct listint_s
 {
-        const int n;
-        struct listint_s *prev;
-        struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 /*prototype */
@@ -30,4 +32,4 @@ void merge_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 
-#endif /*sort.h *
+#endif /*sort.h */
